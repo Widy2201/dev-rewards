@@ -4,7 +4,7 @@
 
 1. Build docker image
 
-   > `docker build -t dev-reward-script .`
+   > `docker build -t dev-reward-script .`docker build -t dev-reward-script 
 
 2. If your ssh keys are in ~/.ssh, run the script:
 
@@ -12,7 +12,7 @@
 
    If your ssh keys are in other directories, replace
    {dir_path_for_your_ssh_keys} with your directory path:
-
+docker run -it -v ~/.ssh:/root/.ssh dev-reward-script
    > `docker run -it --network none -v /{dir_path_for_your_ssh_keys}:/root/.ssh:ro dev-reward-script`
 
 # Generate proof (local sh script)
